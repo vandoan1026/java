@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+body {
+  font-family: "lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  padding: 5px 0;
+  border-radius: 50%;
+}
+
+/* Hero section */
+.hero-section {
+  margin-top: 57px;
+  padding: 50px 0;
+  background-color: var(--primary-color);
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* My family */
+
+#family .card {
+  height: 100%;
+  padding: 10px;
+}
+
+#family .card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* event */
+.event-text {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#event {
+  background-image: url(../img/img-8.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+}
+
+.countdown {
+  width: fit-content;
+  margin: 0 auto;
+  column-gap: 20px;
+}
+
+/* Gallery */
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+/* footer */
+#footer a:hover {
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+  #family .card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}

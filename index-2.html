@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles-2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="CSS/utilities-2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Java the cat</title>
+  </head>
+  <body>
+    <header class="" id="home">
+      <nav class="navbar navbar-expand-lg fixed-top u-bg-primary py-0">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><img src="img/cat-paw.png" alt="" class="w-100" /></a
+          >ALL ABOUT JAVA
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="#family" class="nav-link">My Family</a>
+              </li>
+              <li>
+                <a href="#gallery" class="nav-link">Gallery</a>
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="d-flex gap-2 align-items-center nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="bi bi-person-circle nav-link fs-2"></i>
+              <p class="nav-link m-0">Login</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Need an account? <span><a href="#">Sign up</a></span>
+              </p>
+              <form action="">
+                <label for="uname" class="col-form-label">Username:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="uname"
+                  name="psw"
+                  placeholder="Please Enter Username"
+                  required
+                />
+                <label for="psw" class="col-form-label">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  name="psw"
+                  placeholder="Please Enter Password"
+                  required
+                />
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+              </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+              <span class="psw"><a href="#">Forgot password?</a></span>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section text-center">
+      <div class="avatar-img mb-3">
+        <img src="img/java-2.jpg" alt="" class="avatar" />
+      </div>
+      <h1>Hello, I'm Java the cat</h1>
+      <p class="lead">Nice to meet you, meow!!</p>
+    </section>
+
+    <!-- About me -->
+    <section id="about">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 about-content">
+            <h2 class="text-center text-md-start">About Me...</h2>
+            <p class="text-center text-md-start">
+              I'm an British Shorthair cat, and my birthday is July 6th, 2022.
+            </p>
+            <p class="text-center text-md-start">
+              I'm a only child so my parents love me the most. I will do
+              whatever I want like I am the true princess.
+            </p>
+            <p class="text-center text-md-start">
+              Although I don't let my parents hug me, they're still deeply in
+              love with me.
+            </p>
+            <p class="text-center text-md-start">
+              I like pate, fish and chicken.
+            </p>
+            <p class="text-center text-md-start">
+              I also like playing outside and watching the birds.
+            </p>
+          </div>
+          <div class="col-md-6 about-img text-center">
+            <img src="img/java-3.jpg" alt="" class="w-50 border-10" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My family -->
+    <section id="family" class="u-bg-primary">
+      <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-3">
+          <div class="col">
+            <div class="card">
+              <img src="img/dad.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4>This is my dad <i class="bi bi-gender-male"></i></h4>
+                <p>His name is David Nguyen</p>
+                <p>He's a software developer</p>
+                <p>
+                  I think dad love me more than my mom because he kiss and hug
+                  me everyday which he rarely does with mom
+                  <i class="bi bi-emoji-laughing"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/mom4.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4>This is my mom <i class="bi bi-gender-female"></i></h4>
+                <p>Everyone calls my mom Bom</p>
+                <p>
+                  She is learning to become a software developer like my dad
+                </p>
+                <p>
+                  Mom is the person I love the most because she feed me everyday
+                  with my favarite food <i class="bi bi-emoji-heart-eyes"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/java-5.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h4>And this is me <i class="bi bi-emoji-sunglasses"></i></h4>
+                <p>My main job in this house is eat, sleep, and play</p>
+                <p>
+                  I don't like to be hugged or caressed. However, I like to be
+                  near with my mom and dad everytime (Even when they're in the
+                  bathroom)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-lg-none">
+            <div class="card">
+              <img src="img/jv5.jpg" alt="" />
+              <img src="img/jv4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row my-5 align-items-center row-gap-3">
+          <div class="col-md-6 about-img">
+            <img src="img/family.jpg" alt="" class="w-100 border-10" />
+          </div>
+          <div class="col-md-6 about-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum animi
+              officiis consectetur eius. Ducimus nemo exercitationem, natus
+              fugit eligendi praesentium!
+            </p>
+          </div>
+        </div>
+        <div class="container my-5 text-center">
+          <img src="img/jv1.jpg" alt="" width="600px" height="auto" class="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <!-- <section id="gallery">
+      <div
+        #swiperRef=""
+        class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/jv1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/jv2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/jv3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/jv4.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section> -->
+
+    <!-- Event -->
+    <section id="event" class="d-flex align-items-center">
+      <div class="container py-3" id="birthday">
+        <div class="event-text text-light text-center border-10 py-3">
+          <h2 class="">Java's 1st Birthday Countdown</h2>
+          <div class="countdown grid-4 mt-5">
+            <p class="h2" id="bcd-days"></p>
+            <p class="h2" id="bcd-hours"></p>
+            <p class="h2" id="bcd-minutes"></p>
+            <p class="h2" id="bcd-seconds"></p>
+            <p class="h2" id="">DAYS</p>
+            <p class="h2" id="">HOURS</p>
+            <p class="h2" id="">MINUTES</p>
+            <p class="h2" id="">SECONDS</p>
+          </div>
+          <!-- <p class="h2 mt-3" id="birthday-countdown"></p>
+          <p class="h2 mt-3 text-uppercase" id="">Days Hours Minutes Seconds</p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-4">
+      <div class="grid container gap-3">
+        <div class="text">
+          <h3 class="text-center">Contact</h3>
+          <p>
+            <span class="fw-bold">Dad's phone number:</span> (+84) 111.111.000
+          </p>
+          <p>
+            <span class="fw-bold">Mom's phone number:</span> (+84) 111.111.000
+          </p>
+          <p>
+            <span class="fw-bold">My address:</span> Hoa Tho Dong, Cam Le, Da
+            Nang
+          </p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.7755513270117!2d108.1921196696121!3d16.00819419904141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a32fb782d4b%3A0x1ff455f55d98dd1e!2zVHLhu6sgVsSDbiBUaOG7kSwgQ-G6qW0gTOG7hywgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1687782457733!5m2!1svi!2s"
+            width="650"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="border-10"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-2" id="footer">
+      <div class="d-flex flex-column align-items-center">
+        <p class="copyright mb-1">
+          Copyright &copy; JavaFamily all rights reserved
+        </p>
+        <div class="d-flex gap-3 lead">
+          <a href="#"><i class="bi bi-facebook link-dark"></i></a>
+          <a href="#"><i class="bi bi-instagram link-dark"></i></a>
+          <a href="#"><i class="bi bi-linkedin link-dark"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>
